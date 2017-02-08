@@ -1,13 +1,22 @@
 # Artificial Intelligence Nanodegree
 ## Introductory Project: Diagonal Sudoku Solver
 
+# Note on unit test
+In unit test, the print results shows that I have passed all the cases but the assertion errors are still reported.
+I think this may caused of the order of items in dictionary.
+
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?
-A: *Student should provide answer here*
+A: 
+- For each unit, find whether there is a box with only 2 possible outcome and add them into a default dict.
+- Then if the default dict has a item with value 2, then a pair of values with the same value which are in length 2 is exist, that is a twin. 
+- Then iterating through all boxes in this unit to eliminate the digits that appear in this twin except the twins themselves.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?
-A: *Student should provide answer here*
+A:
+- For diagonal sudoku, the only difference is that 2 more units are added in unitlist. So this is changed in variable initialization phase with no change in solution functions.
+- The basic solving procedure is reduce, then check, then search.
 
 ### Install
 
