@@ -2,15 +2,15 @@
 ## Introductory Project: Diagonal Sudoku Solver
 
 # Note on unit test
-In unit test, the print results shows that I have passed all the cases but the assertion errors are still reported.
-I think this may caused of the order of items in dictionary.
+In unit test, the print results show that I have passed all the cases but the assertion errors are still reported.
+I think this may caused by the order of items in dictionary.
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?
 A: 
-- For each unit, find whether there is a box with only 2 possible outcome and add them into a default dict.
-- Then if the default dict has a item with value 2, then a pair of values with the same value which are in length 2 is exist, that is a twin. 
-- Then iterating through all boxes in this unit to eliminate the digits that appear in this twin except the twins themselves.
+- For each unit, find the boxes with only 2 possible outcomes and add them into a default dict.
+- Then if the default dict has a item which appears 2 times , then that is a twin. 
+- Then iterating through all boxes in this unit and eliminate the digits that appear in this twin except the twins themselves.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?
